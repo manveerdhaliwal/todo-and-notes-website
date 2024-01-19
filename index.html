@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+       body {
+        font-family: 'Shadows Into Light', cursive;
+    
+    background-image:url(ntp.jpg.webp);
+    background-size:cover; /* Crop and resize the image to cover the entire background */
+    /* Center the image */
+    background-repeat:repeat;
+     
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #0f0e0e;
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0c3e46;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0578a5;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Site</h1>
+    <button id="openNotes">Open Notes App</button>
+    <button id="openTodo">Open Todo App</button>
+
+    <script>
+        const openNotesBtn = document.getElementById('openNotes');
+        const openTodoBtn = document.getElementById('openTodo');
+
+        openNotesBtn.addEventListener('click', () => {
+            window.location.href = 'notes.html';
+        });
+
+        openTodoBtn.addEventListener('click', () => {
+            window.location.href = 'todo.html';
+        });
+    </script>
+</body>
+</html>
